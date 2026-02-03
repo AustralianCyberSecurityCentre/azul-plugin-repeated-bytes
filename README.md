@@ -3,7 +3,6 @@
 ![azul | plugin](https://img.shields.io/static/v1.svg?label=azul&message=plugin&color=163a66)
 ![state | prod](https://img.shields.io/static/v1.svg?label=state&message=prod&color=163a66)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Security: bandit](https://img.shields.io/badge/security-bandit-green.svg)](https://github.com/PyCQA/bandit)
 
 Find smaller portion of data which repeats after its first occurrence.
 
