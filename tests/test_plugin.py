@@ -37,8 +37,7 @@ class TestRepeatedBytes(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="17d2f0f7197a6612e311d141781f2b9539c4aef7affd729246c401890e000dde",
+                        sha256="17d2f0f7197a6612e311d141781f2b9539c4aef7affd729246c401890e000dde",
                         features={
                             "rep_byte_data": [FV("A")],
                             "rep_byte_data_size": [FV(1)],
@@ -59,8 +58,7 @@ class TestRepeatedBytes(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="b6bdab3f569b588a55c2db89a67fdb47e2ba2e9f7e05ff2d361b7bdde4849df1",
+                        sha256="b6bdab3f569b588a55c2db89a67fdb47e2ba2e9f7e05ff2d361b7bdde4849df1",
                         features={
                             "rep_byte_data": [FV("A\\xaeB")],
                             "rep_byte_data_size": [FV(3)],
@@ -81,8 +79,7 @@ class TestRepeatedBytes(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="23cd67852af04fd6885d2763266f2765b5e03c6ae3a5c1c6c95f7e03e10ec10d",
+                        sha256="23cd67852af04fd6885d2763266f2765b5e03c6ae3a5c1c6c95f7e03e10ec10d",
                         features={
                             "rep_byte_data": [FV("\\x00")],
                             "rep_byte_data_size": [FV(1)],
@@ -135,8 +132,7 @@ class TestRepeatedBytes(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="dca477353494231daacb83a0e8d8696bc8409ba2e8940a47d6518285d1fb4dc7",
+                        sha256="dca477353494231daacb83a0e8d8696bc8409ba2e8940a47d6518285d1fb4dc7",
                         features={
                             "rep_byte_data_size": [FV(33051)],
                             "rep_byte_excess_size": [FV(24363)],
@@ -146,11 +142,9 @@ class TestRepeatedBytes(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="dca477353494231daacb83a0e8d8696bc8409ba2e8940a47d6518285d1fb4dc7",
+                            sha256="dca477353494231daacb83a0e8d8696bc8409ba2e8940a47d6518285d1fb4dc7",
                         ),
-                        entity_type="binary",
-                        entity_id="d49a38e4c2b9103a7f53c6caab8d939c112063184dfd99c80a15095824022a2b",
+                        sha256="d49a38e4c2b9103a7f53c6caab8d939c112063184dfd99c80a15095824022a2b",
                         relationship={"label": "deduplicated"},
                         data=[
                             EventData(
@@ -178,8 +172,7 @@ class TestRepeatedBytes(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="e547815b6547e0652b57b596b42078914f158579f21b6682b54fd0630b08f62d",
+                        sha256="e547815b6547e0652b57b596b42078914f158579f21b6682b54fd0630b08f62d",
                         features={
                             "rep_byte_data_size": [FV(11584)],
                             "rep_byte_excess_size": [FV(11584)],
@@ -189,11 +182,9 @@ class TestRepeatedBytes(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="e547815b6547e0652b57b596b42078914f158579f21b6682b54fd0630b08f62d",
+                            sha256="e547815b6547e0652b57b596b42078914f158579f21b6682b54fd0630b08f62d",
                         ),
-                        entity_type="binary",
-                        entity_id="65ae9cdf1eb7ec0214e984698469fd7b0006491288e690cff9f6c719f1a74ffd",
+                        sha256="65ae9cdf1eb7ec0214e984698469fd7b0006491288e690cff9f6c719f1a74ffd",
                         relationship={"label": "deduplicated"},
                         data=[
                             EventData(
