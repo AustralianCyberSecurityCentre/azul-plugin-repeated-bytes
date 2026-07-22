@@ -3,7 +3,7 @@
 The original logic has been expanded to search for arbitrary widths.
 """
 
-from azul_runner import BinaryPlugin, Feature, Job, cmdline_run
+from azul_runner import BinaryPlugin, Feature, FeatureType, Job, cmdline_run
 
 from azul_plugin_repeated_bytes.repeated_bytes import data_repeats
 
@@ -22,11 +22,11 @@ class AzulPluginRepeatedBytes(BinaryPlugin):
 
     VERSION = "2024.04.29"
     FEATURES = [
-        Feature("rep_byte_data", "Representation of the core data which is repeated.", str),
-        Feature("rep_byte_data_size", "Size of the core data which is repeated.", int),
-        Feature("rep_byte_excess_size", "Size of the excess, repeated data.", int),
-        Feature("rep_byte_ratio", "Ratio of the total size to the size of the core data.", float),
-        Feature("tag", "Tags to set on this entity", str),
+        Feature("rep_byte_data", "Representation of the core data which is repeated.", FeatureType.String),
+        Feature("rep_byte_data_size", "Size of the core data which is repeated.", FeatureType.Integer),
+        Feature("rep_byte_excess_size", "Size of the excess, repeated data.", FeatureType.Integer),
+        Feature("rep_byte_ratio", "Ratio of the total size to the size of the core data.", FeatureType.Float),
+        Feature("tag", "Tags to set on this entity", FeatureType.String),
     ]
 
     def execute(self, job: Job):
