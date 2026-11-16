@@ -2,7 +2,7 @@
 
 import argparse
 
-import pyprimesieve  # ty: ignore[unresolved-import]
+import pyprimesieve  # ty: ignore[import-not-found]
 
 # We'll search for the block of data with this size at the start of the file
 # in the remainder of the file, to narrow down the list of widths we test.
